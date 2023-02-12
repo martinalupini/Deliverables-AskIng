@@ -1,0 +1,98 @@
+{
+  "id": "43c99c0e-2459-4e25-a826-63bc72bd4a87",
+  "version": "2.0",
+  "name": "SeleniumIDETest",
+  "url": "https://www.wikipedia.org",
+  "tests": [{
+    "id": "5ff0be5c-8c32-4e13-8144-190f2b371d0a",
+    "name": "TestPartnerJuliusCaesar",
+    "commands": [{
+      "id": "28448086-610f-4eb1-b537-27fb565cb865",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a4fa7c99-68f9-4d11-96fd-c7613830b095",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "810x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2e61d470-1f59-4dbc-b851-235b4252f847",
+      "comment": "",
+      "command": "click",
+      "target": "css=#js-link-box-en > strong",
+      "targets": [
+        ["css=#js-link-box-en > strong", "css:finder"],
+        ["xpath=//a[@id='js-link-box-en']/strong", "xpath:idRelative"],
+        ["xpath=//div[2]/a/strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'English')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a5cd60bf-39ce-46e6-a955-08bcf6c94cc0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Search",
+      "targets": [
+        ["linkText=Search", "linkText"],
+        ["css=.mw-ui-icon-wikimedia-search", "css:finder"],
+        ["xpath=//div[@id='p-search']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/wiki/Special:Search')]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Search')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9d72ab1c-9647-4196-ba67-bf254966d582",
+      "comment": "",
+      "command": "type",
+      "target": "name=search",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.cdx-text-input__input", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//form[@id='searchform']/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/input", "xpath:position"]
+      ],
+      "value": "julius caesar"
+    }, {
+      "id": "57b29a88-3ed6-46cd-81c4-75aef0331af9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cdx-button",
+      "targets": [
+        ["css=.cdx-button", "css:finder"],
+        ["xpath=//form[@id='searchform']/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Search')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "07834a3a-3caf-4070-b9a4-c38a20bfbb6f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(11) > .infobox-data",
+      "targets": [
+        ["css=tr:nth-child(11) > .infobox-data", "css:finder"],
+        ["xpath=//div[@id='mw-content-text']/div/table/tbody/tr[11]/td", "xpath:idRelative"],
+        ["xpath=//tr[11]/td", "xpath:position"],
+        ["xpath=//td[contains(.,'Cleopatra')]", "xpath:innerText"]
+      ],
+      "value": "Cleopatra"
+    }]
+  }],
+  "suites": [{
+    "id": "8a1848ac-64b9-44d2-abfa-77ed4b850cdc",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["5ff0be5c-8c32-4e13-8144-190f2b371d0a"]
+  }],
+  "urls": ["https://www.wikipedia.org/"],
+  "plugins": []
+}

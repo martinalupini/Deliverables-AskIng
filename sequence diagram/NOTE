@@ -1,0 +1,6 @@
+NOTE: All the synchronous calls are asynchronous in the implementation. 
+In addition to “boundary”, “entity”, “control”, I have marked the classes as “dao” (the main aim of these classes is to retrieve information from the persistency layer)
+and “engineering” (these classes are introduced as an additional help to the control class). 
+“boundary” classes cannot communicate with “entity” classes. In this case I used the “entity” mark also for the bean classes. 
+Boundary and Bean classes can communicate with each other.
+The destroys are not implemented since the deallocation in Java is in charge of the Garbage Collector.

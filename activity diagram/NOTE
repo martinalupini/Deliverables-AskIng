@@ -1,0 +1,3 @@
+NOTE: In the “log-in” activity, the checks on the number of attempts and the timeout are NOT implemented.
+ In the “respond to question” activity the actions <<Display "banned words present" error message>> and >>Increase "bad behavior" field in user's profile>> 
+ are not simultaneous in the implementation.
